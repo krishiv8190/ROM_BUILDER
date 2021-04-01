@@ -8,7 +8,7 @@ git config --global user.email chhandler_bing@gmail.com
 
 repo init -u https://github.com/descendant-oss/manifest -b eleven-staging -g default,-device,-mips,-darwin,-notdefault
 repo sync --no-tags --no-clone-bundle --current-branch --force-sync --optimized-fetch -j16
-git clone https://github.com/geopd/device_xiaomi_sakura -b dot-11 device/xiaomi/sakura
+https://github.com/krishiv8190/device_xiaomi_sakura-2 device/xiaomi/sakura
 git clone https://github.com/geopd/vendor_xiaomi_sakura -b lineage-18.1 vendor/xiaomi
  
 git clone https://github.com/Couchpotato-sauce/kernel_xiaomi_sleepy kernel/xiaomi/msm8953 
