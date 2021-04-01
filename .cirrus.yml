@@ -6,7 +6,7 @@ env:
 task:
   container:
     image: geopd/builder:update
-    cpu: 9
+    cpu: 8
     memory: 24G
 
   name: rom
