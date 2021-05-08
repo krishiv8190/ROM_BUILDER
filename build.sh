@@ -6,7 +6,7 @@ cd /tmp/rom
 git config --global user.name Chandler
 git config --global user.email chhandler_bing@gmail.com
 
-repo init -u https://github.com/descendant-oss/manifest -b eleven-staging -g default,-device,-mips,-darwin,-notdefault
+repo init -u https://github.com/Wave-Project/manifest -b r -g default,-device,-mips,-darwin,-notdefault
 repo sync --no-tags --no-clone-bundle --current-branch --force-sync --optimized-fetch -j16
 git clone https://github.com/krishiv8190/device_xiaomi_sakura-2 device/xiaomi/sakura
 git clone https://github.com/geopd/vendor_xiaomi_sakura -b lineage-18.1 vendor/xiaomi
@@ -15,7 +15,7 @@ git clone https://github.com/Couchpotato-sauce/kernel_xiaomi_sleepy kernel/xiaom
 git clone https://github.com/geopd/vendor_custom_prebuilts -b master vendor/custom/prebuilts
 git clone https://github.com/mvaisakh/gcc-arm64.git -b gcc-master prebuilts/gcc/linux-x86/aarch64/aarch64-elf
 
-. build/envsetup.sh && lunch descendant_sakura-userdebug
+. build/envsetup.sh && brunch sakura
 
 BUILD_DATE=$(date +"%Y%m%d")
 BUILD_START=$(date +"%s")
